@@ -18,7 +18,7 @@ public class Factorials_Memo {
 		
 		if (n < 0) {
 			throw new IllegalArgumentException(
-					"We assume the positive Fibonacci sequence only");
+					"We assume the positive number only");
 		}
 		if (memoized.containsKey(n)) {
 			return memoized.get(n);
