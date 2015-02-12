@@ -7,7 +7,7 @@ public class Fibonacci_Memo {
 	// static int[] memo;
 
 	public static void main(String[] args) {
-		int n = 50;
+		int n = 1070;
 		long startTime = System.currentTimeMillis();
 		HashMap<Integer, BigInteger> memoized = new HashMap<Integer, BigInteger>();
 		BigInteger result = fibonacci(n, memoized);
