@@ -4,7 +4,7 @@ import java.util.HashMap;
 public class Fibonacci_Memo {
 
 	
-	static int[] memo;
+	// static int[] memo;
 
 	public static void main(String[] args) {
 		int n = 50;
@@ -14,14 +14,14 @@ public class Fibonacci_Memo {
 		System.out.println(" Result of " + n + ": " + result + "    \n"
 				+ " Total Time " + (System.currentTimeMillis() - startTime));
 
-		// ---------------------------------------------- 
+		// // ---------------------------------------------- 
 		
-		memo = new int[n + 1];
-		memo[0] = 0;
-		memo[1] = 1;
-		int result2 = fibonacci2(n);
-		System.out.println(" Result of " + n + ": " + result2 + "    \n"
-				+ " Total Time " + (System.currentTimeMillis() - startTime));
+		// memo = new int[n + 1];
+		// memo[0] = 0;
+		// memo[1] = 1;
+		// int result2 = fibonacci2(n);
+		// System.out.println(" Result of " + n + ": " + result2 + "    \n"
+		// 		+ " Total Time " + (System.currentTimeMillis() - startTime));
 
 	}
 
@@ -48,14 +48,14 @@ public class Fibonacci_Memo {
 		return fibonacci;
 	}
 
-	private static int fibonacci2(int n) {
-		if (n == 0) {
-			return memo[0];
-		} else if (n == 1) {
-			return memo[1];
-		} else {
-			memo[n] = fibonacci2(n - 2) + fibonacci2(n - 1);
-			return memo[n];
-		}
-	}
+	// private static int fibonacci2(int n) {
+	// 	if (n == 0) {
+	// 		return memo[0];
+	// 	} else if (n == 1) {
+	// 		return memo[1];
+	// 	} else {
+	// 		memo[n] = fibonacci2(n - 2) + fibonacci2(n - 1);
+	// 		return memo[n];
+	// 	}
+	// }
 }
